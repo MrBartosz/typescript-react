@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+
+.App {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.main_button {
+  position: fixed;
+  display: inline-block;
+  padding: 15px 25px;
+  top: 5px;
+  left: 5px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #181616;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  z-index: 2;
+  background-image: linear-gradient(to bottom, rgb(87, 87, 86), #bc9864);
+}
+
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  margin-right: 5px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-image: linear-gradient(to bottom, rgb(58, 81, 97), #1d1d2b);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {
+  background-image: linear-gradient(to bottom, rgb(58, 81, 97), #0a0a0a);
+}
+
+.main_button:hover {
+  background-image: linear-gradient(to bottom, rgb(87, 87, 86), #946a2f);
+}
+
+.main_button:active {
+  background-image: linear-gradient(to bottom, rgb(87, 87, 86), rgb(15, 15, 15));
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button:active {
+  background-image: linear-gradient(to bottom, rgb(87, 87, 86), #220433);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button-div {
+  margin-top: 70px;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  background-image: url(https://wallpapers.com/images/hd/light-gray-background-e49ssma7t9xektxp.jpg);
+
+}
+
+.nav {
+  top:5px;
+  width: 100%;
+  height: 35px;
+  position: fixed;
+  line-height: 35px;
+  text-align: center;
+  background-color: #33333300;
+}
+
+.nav div.main_list {
+  height: 35px;
+  float: right;
+}
+
+.nav div.main_list ul {
+  width: 100%;
+  height: 35px;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav div.main_list ul li {
+  width: auto;
+  height: 35px;
+  padding: 0;
+  padding-right: 3rem;
+}
+
+.nav div.main_list ul li a {
+  font-family: inherit;
+  text-decoration: none;
+  color: #ffffff;
+  outline-offset: 2px;
+  line-height: 35px;
+  font-size: 1.4rem;
+  margin: 0 10px;
+}
+
+.nav div.main_list ul li a:hover {
+  color: #928f8fbd;
+}
+
+.navbar-button {
+  background-color: rgba(128, 128, 128, 0);
+  border: none;
+}
+
+
+.navbar-button:hover {
+  background-color: rgba(160, 160, 160, 0.253);
+  transition: color .33s ease,background-color .33s ease;
+}

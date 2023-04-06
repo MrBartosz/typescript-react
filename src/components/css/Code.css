@@ -1,0 +1,64 @@
+
+  
+  .code-wrapper {
+    background-color: #1a1a1f;
+    border-radius: 5px;
+    border: 2px solid #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Lato;
+    box-sizing: border-box;
+  }
+  
+  .code-keyboard__button {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    background: #333;
+    color: white;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .code-keyboard__button:hover {
+    background: #777;
+  }
+  
+  .code-keyboard__button--reset {
+    background: darkred;
+  }
+  
+  .code-keyboard__button--save {
+    background: darkgreen;
+  }
+  
+  .code-keyboard__button--reset:hover {
+    background: red;
+  }
+  
+  .code-keyboard__button--save:hover {
+    background: green;
+  }
+  
+  .code-display {
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: 2px solid #333;
+    color: #333;
+    display: inline-block;
+    margin-top: 5px;
+    padding: 10px;
+    min-height: 20px;
+    width: 100%;
+    text-align: center;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(136,225,241,1) 100%);
+    flex-grow: 1;
+  }
+
+  .code-message {
+    color: whitesmoke;
+  }

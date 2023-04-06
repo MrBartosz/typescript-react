@@ -1,0 +1,39 @@
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    margin-right: 5px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #160b08;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  .button:hover {background-color: #424242}
+  
+  .button:active {
+    background-color: #333333;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  .text-input {
+    padding: 10px 5px;
+    border: 1px solid lightgray;
+    text-align: right;
+  }
+  
+  .mirror {
+    font-family: Lato;
+    font-style: italic;
+    background: linear-gradient(to bottom,  #c44349 0%,#d31b1b 50%,#c50808 75%,#b80000 100%);
+    padding: 10px;
+    min-width: 200px;
+    display: inline-block;
+    box-shadow: 0 7px 3px -5px rgba(0,0,0,0.2);
+  }

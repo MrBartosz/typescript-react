@@ -1,0 +1,92 @@
+.ShoppingCart-body {
+    background-color: whitesmoke;
+}
+
+.ShoppingCart-h1 {
+ border-bottom: 1px dashed rgba(128, 128, 128, 0.123);
+ padding: 20px;
+ display: flex;
+ justify-content: center;
+}
+
+.ShoppingCart-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px dashed rgba(128, 128, 128, 0.13);
+}
+
+.ShoppingCart-type {
+    line-height: 0.8rem;
+    margin-right: 30px;
+}
+
+.ShoppingCart-type p {
+    font-size: 0.8rem;
+}
+
+.ShoppingCart-input-container {
+    text-align: center;
+}
+
+.ShoppingCart-input {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.ShoppingCart-quantity-price {
+ display: flex;
+ align-items: center;
+}
+
+.ShoppingCart-x-button {
+    margin-left: 10px;
+}
+
+.ShoppingCart-x {
+    margin-left: 10px;
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+
+.ShoppingCart-x:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.ShoppingCart-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+}
+
+
+.ShoppingCart-footer span {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.ShoppingCart-button {
+    padding: 8px 32px;
+    border-radius: 10px;
+    background-color: rgb(72, 72, 192);
+    color: white;
+    font: bold;
+}
+
+.ShoppingCart-button:hover {
+    background-color: rgb(27, 27, 136);
+}
+
+.ShoppingCart-add-button {
+    margin-left: 10px;
+    border-radius: 50%;
+    border: 1px solid gray;
+
+}
+
+.ShoppingCart-add-button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}

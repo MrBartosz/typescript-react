@@ -1,0 +1,34 @@
+.Alert-body {
+    text-align: center;
+    justify-content: center;
+
+}
+
+.Alert-body p {
+    color: white;
+    background-color: black;
+}
+
+.Alert-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px 10px 40%;
+    height: 50px;
+    width: 20%;
+    background-color: rgb(63, 62, 62);
+    border-radius: 50%;
+    
+    
+}
+
+.Alert-button {
+    margin: 10px;
+    padding: 16px 32px;
+    background-color: aquamarine;
+    border-radius: 20px;
+}
+
+.Alert-button:hover {
+    background-color: rgba(127, 255, 212, 0.671);
+}

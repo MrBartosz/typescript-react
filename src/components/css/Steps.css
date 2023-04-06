@@ -1,0 +1,143 @@
+.Steps-body {
+    background-color: #596a73;
+    margin: 20px auto;
+    max-width: 700px;
+    padding-top: 20px;
+}
+
+.Steps-container {
+    max-width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Steps-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Steps-step {
+    display: flex;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 9999px;
+    font-size: 1.125rem;
+    background-color: #fff;
+    border: 2px solid #999b9c;
+    transition: background-color 1s;
+}
+
+.Steps-step-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 9999px;
+    font-size: 1.125rem;
+    background-color: #38c172;
+    border: 1px solid #999b9c;
+}
+
+.Steps-step span {
+    width: 100%;
+    color: #596a73;
+    font-size: 1.125rem;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.Steps-connector-container {
+    display: flex;
+    align-items: center;
+}
+
+.Steps-connector {
+    display: block;
+    background-color: #dae4e9;
+    padding: 4px 14px;
+    width: 100%;
+    border-radius: 0.25rem;
+    border: 1px solid #dae4e9;
+    transition: background-color 0.5s;
+}
+
+.Steps-second-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .75rem;
+}
+
+.Steps-second {
+    width: 25%;
+    display: block;
+    text-align: center;
+}
+
+.Steps-button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.Steps-button-back {
+    margin: 10px;
+    padding: 8px 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(119, 27, 11);
+    color: rgb(119, 27, 11);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.Steps-button-next {
+    margin: 10px;
+    padding: 8px 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(3, 59, 3);
+    color: rgb(3, 59, 3);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.Steps-button-back:active {
+    background-color: rgb(39, 8, 3);
+    color: rgb(196, 48, 22);
+
+}
+
+.Steps-button-next:active {
+    background-color: rgb(1, 27, 1);
+    color: rgb(9, 151, 9); 
+
+}
+
+.Steps-active {
+    background-color: #38c172;
+    color: white;
+    animation: scale-up 0.2s ease-in-out;
+}
+
+.Steps-last {
+    background-color: rgb(1, 27, 1);
+    color: rgb(9, 151, 9); 
+}
+
+.Steps-first {
+    background-color: rgb(39, 8, 3);
+    color: rgb(196, 48, 22);
+}
+
+@keyframes scale-up {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.2);
+    }
+  }
