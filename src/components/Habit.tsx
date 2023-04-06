@@ -15,7 +15,7 @@ export const Habit = () => {
         </div>
         {show && 
         <div>
-            Elo
+            Elooo
         </div>
         }
         

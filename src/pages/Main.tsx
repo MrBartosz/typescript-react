@@ -33,6 +33,7 @@ export const Main = () => {
           <ShoppingCart />
           <Alert />
           <Steps />
+          <Habit />
         </div>
       }
     </>
