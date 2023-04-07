@@ -60,7 +60,7 @@ export const Alert = () => {
               {div.content}
             </div>
           ))}
-          <p>Naciśnij na alert, aby go usunąć. Po 5 sekundach usunie się automatycznie. </p>
+          <p>Naciśnij na alert, aby go usunąć, lub odczekaj 5 sekund by usunął się automatycznie. </p>
         </div>
       )}
     </>

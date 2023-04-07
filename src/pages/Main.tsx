@@ -9,7 +9,8 @@ import { Code } from '../components/Code';
 import { ShoppingCart } from '../components/ShoppingCart';
 import { Alert } from '../components/Alert';
 import { Steps } from '../components/Steps';
-import { Habit } from '../components/Habit';
+import { HabitPath } from '../components/HabitPath';
+
 
 export const Main = () => {
   const [show, toggleShow] = useState(false);
@@ -33,7 +34,7 @@ export const Main = () => {
           <ShoppingCart />
           <Alert />
           <Steps />
-          <Habit />
+          <HabitPath />
         </div>
       }
     </>

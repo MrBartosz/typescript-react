@@ -4,6 +4,8 @@ import { Navbar } from './components/Navbar';
 import { Main } from './pages/Main'
 import { About } from './pages/About'
 import { Contact } from './pages/Contact';
+import { Habit } from './pages/Habit';
+
 
 export default function App() {
 
@@ -14,6 +16,7 @@ export default function App() {
       </div>
       
       <Routes>
+        <Route path='/Habit' element={<Habit />} />
         <Route path='/Main' element={<Main />} />
         <Route path='/*' element={<Main />} />
         <Route path='/About' element={<About />} />
