@@ -50,3 +50,8 @@ h1, h2 {
     top: -3px;
   }
   
+.bulb-p {
+  color: aliceblue;
+  margin-bottom: 3rem;
+  font-size: 1.2rem;
+}

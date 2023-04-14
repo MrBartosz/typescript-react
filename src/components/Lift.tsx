@@ -53,6 +53,11 @@ export const Lift = () => {
             </button>
         </div>
         {show &&
+        <div className='lift-p'>
+            <p>Zadanie polega na symulowaniu działania windy, umożliwiając jej poruszanie się w górę i w dół, oraz wyświetlanie 
+                aktualnego piętra, a także kierunku poruszania się na podstawie aktualnego scrolla.</p>
+        </div> }
+        {show &&
         <div className = 'lift-body'>
             <div className="lift-direction">
             {floor} {direction}

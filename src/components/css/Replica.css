@@ -76,3 +76,15 @@ h1, h2 {
     transition: 0s
   }
 
+.replica-p {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-image: linear-gradient(to bottom, rgb(59, 59, 58), #14110bd0);
+  color: aliceblue;
+  margin: 0 2rem;
+}
+
+.replica-p p {
+  padding: 0.5rem 0;
+}

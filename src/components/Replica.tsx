@@ -49,103 +49,13 @@ export const Replica = () => {
         </button>
     </div>
         {show &&
-        <div className="replica_app">
-            <h2 className="replica-h2">Płótno:</h2>
-            <div className="flex-column fake-canvas">
-                <div className="flex-row">
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                </div>
-                <div className="flex-row">
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                </div>
-                <div className="flex-row">
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                </div>
-                <div className="flex-row">
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                </div>
-                <div className="flex-row">
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                </div>
-                <div className="flex-row">
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                </div>
-                <div className="flex-row">
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                    <div className="pixel"></div>
-                </div>
-                </div>
-            <h2 className="replica-h2">Oryginał:</h2>
-                <div className="flex-column original-canvas">
+        <div>
+            <div className="replica-p">
+                <p>Zadanie polega na renderowaniu dwóch plansz - oryginalej i repliki, składających się z pikseli. Po kliknięciu przycisku zmienia ich wygląd na identyczny lub różny w zależności od ustawień sortowania.</p>
+            </div>
+            <div className="replica_app">
+                <h2 className="replica-h2">Płótno:</h2>
+                <div className="flex-column fake-canvas">
                     <div className="flex-row">
                         <div className="pixel"></div>
                         <div className="pixel"></div>
@@ -161,67 +71,15 @@ export const Replica = () => {
                     </div>
                     <div className="flex-row">
                         <div className="pixel"></div>
-                        <div className="pixel pixel-dot"></div>
-                        <div className="pixel pixel-dot"></div>
-                        <div className="pixel pixel-dot"></div>
-                        <div className="pixel"></div>
-                        <div className="pixel pixel-dot"></div>
-                        <div className="pixel"></div>
-                        <div className="pixel pixel-dot"></div>
-                        <div className="pixel"></div>
-                        <div className="pixel pixel-dot"></div>
-                        <div className="pixel"></div>
-                    </div>
-                    <div className="flex-row">
-                        <div className="pixel"></div>
-                        <div className="pixel pixel-dot"></div>
-                        <div className="pixel"></div>
-                        <div className="pixel pixel-dot"></div>
-                        <div className="pixel"></div>
-                        <div className="pixel pixel-dot"></div>
-                        <div className="pixel"></div>
-                        <div className="pixel pixel-dot"></div>
-                        <div className="pixel"></div>
-                        <div className="pixel pixel-dot"></div>
-                        <div className="pixel"></div>
-                    </div>
-                    <div className="flex-row">
-                        <div className="pixel"></div>
-                        <div className="pixel pixel-dot"></div>
-                        <div className="pixel"></div>
-                        <div className="pixel pixel-dot"></div>
-                        <div className="pixel"></div>
-                        <div className="pixel pixel-dot"></div>
-                        <div className="pixel pixel-dot"></div>
-                        <div className="pixel"></div>
-                        <div className="pixel"></div>
-                        <div className="pixel pixel-dot"></div>
-                        <div className="pixel"></div>
-                    </div>
-                    <div className="flex-row">
-                        <div className="pixel"></div>
-                        <div className="pixel pixel-dot"></div>
-                        <div className="pixel"></div>
-                        <div className="pixel pixel-dot"></div>
-                        <div className="pixel"></div>
-                        <div className="pixel pixel-dot"></div>
-                        <div className="pixel"></div>
-                        <div className="pixel pixel-dot"></div>
                         <div className="pixel"></div>
                         <div className="pixel"></div>
                         <div className="pixel"></div>
-                    </div>
-                    <div className="flex-row">
                         <div className="pixel"></div>
-                        <div className="pixel pixel-dot"></div>
-                        <div className="pixel pixel-dot"></div>
-                        <div className="pixel pixel-dot"></div>
                         <div className="pixel"></div>
-                        <div className="pixel pixel-dot"></div>
                         <div className="pixel"></div>
-                        <div className="pixel pixel-dot"></div>
                         <div className="pixel"></div>
-                        <div className="pixel pixel-dot"></div>
+                        <div className="pixel"></div>
+                        <div className="pixel"></div>
                         <div className="pixel"></div>
                     </div>
                     <div className="flex-row">
@@ -236,6 +94,153 @@ export const Replica = () => {
                         <div className="pixel"></div>
                         <div className="pixel"></div>
                         <div className="pixel"></div>
+                    </div>
+                    <div className="flex-row">
+                        <div className="pixel"></div>
+                        <div className="pixel"></div>
+                        <div className="pixel"></div>
+                        <div className="pixel"></div>
+                        <div className="pixel"></div>
+                        <div className="pixel"></div>
+                        <div className="pixel"></div>
+                        <div className="pixel"></div>
+                        <div className="pixel"></div>
+                        <div className="pixel"></div>
+                        <div className="pixel"></div>
+                    </div>
+                    <div className="flex-row">
+                        <div className="pixel"></div>
+                        <div className="pixel"></div>
+                        <div className="pixel"></div>
+                        <div className="pixel"></div>
+                        <div className="pixel"></div>
+                        <div className="pixel"></div>
+                        <div className="pixel"></div>
+                        <div className="pixel"></div>
+                        <div className="pixel"></div>
+                        <div className="pixel"></div>
+                        <div className="pixel"></div>
+                    </div>
+                    <div className="flex-row">
+                        <div className="pixel"></div>
+                        <div className="pixel"></div>
+                        <div className="pixel"></div>
+                        <div className="pixel"></div>
+                        <div className="pixel"></div>
+                        <div className="pixel"></div>
+                        <div className="pixel"></div>
+                        <div className="pixel"></div>
+                        <div className="pixel"></div>
+                        <div className="pixel"></div>
+                        <div className="pixel"></div>
+                    </div>
+                    <div className="flex-row">
+                        <div className="pixel"></div>
+                        <div className="pixel"></div>
+                        <div className="pixel"></div>
+                        <div className="pixel"></div>
+                        <div className="pixel"></div>
+                        <div className="pixel"></div>
+                        <div className="pixel"></div>
+                        <div className="pixel"></div>
+                        <div className="pixel"></div>
+                        <div className="pixel"></div>
+                        <div className="pixel"></div>
+                    </div>
+                    </div>
+                <h2 className="replica-h2">Oryginał:</h2>
+                    <div className="flex-column original-canvas">
+                        <div className="flex-row">
+                            <div className="pixel"></div>
+                            <div className="pixel"></div>
+                            <div className="pixel"></div>
+                            <div className="pixel"></div>
+                            <div className="pixel"></div>
+                            <div className="pixel"></div>
+                            <div className="pixel"></div>
+                            <div className="pixel"></div>
+                            <div className="pixel"></div>
+                            <div className="pixel"></div>
+                            <div className="pixel"></div>
+                        </div>
+                        <div className="flex-row">
+                            <div className="pixel"></div>
+                            <div className="pixel pixel-dot"></div>
+                            <div className="pixel pixel-dot"></div>
+                            <div className="pixel pixel-dot"></div>
+                            <div className="pixel"></div>
+                            <div className="pixel pixel-dot"></div>
+                            <div className="pixel"></div>
+                            <div className="pixel pixel-dot"></div>
+                            <div className="pixel"></div>
+                            <div className="pixel pixel-dot"></div>
+                            <div className="pixel"></div>
+                        </div>
+                        <div className="flex-row">
+                            <div className="pixel"></div>
+                            <div className="pixel pixel-dot"></div>
+                            <div className="pixel"></div>
+                            <div className="pixel pixel-dot"></div>
+                            <div className="pixel"></div>
+                            <div className="pixel pixel-dot"></div>
+                            <div className="pixel"></div>
+                            <div className="pixel pixel-dot"></div>
+                            <div className="pixel"></div>
+                            <div className="pixel pixel-dot"></div>
+                            <div className="pixel"></div>
+                        </div>
+                        <div className="flex-row">
+                            <div className="pixel"></div>
+                            <div className="pixel pixel-dot"></div>
+                            <div className="pixel"></div>
+                            <div className="pixel pixel-dot"></div>
+                            <div className="pixel"></div>
+                            <div className="pixel pixel-dot"></div>
+                            <div className="pixel pixel-dot"></div>
+                            <div className="pixel"></div>
+                            <div className="pixel"></div>
+                            <div className="pixel pixel-dot"></div>
+                            <div className="pixel"></div>
+                        </div>
+                        <div className="flex-row">
+                            <div className="pixel"></div>
+                            <div className="pixel pixel-dot"></div>
+                            <div className="pixel"></div>
+                            <div className="pixel pixel-dot"></div>
+                            <div className="pixel"></div>
+                            <div className="pixel pixel-dot"></div>
+                            <div className="pixel"></div>
+                            <div className="pixel pixel-dot"></div>
+                            <div className="pixel"></div>
+                            <div className="pixel"></div>
+                            <div className="pixel"></div>
+                        </div>
+                        <div className="flex-row">
+                            <div className="pixel"></div>
+                            <div className="pixel pixel-dot"></div>
+                            <div className="pixel pixel-dot"></div>
+                            <div className="pixel pixel-dot"></div>
+                            <div className="pixel"></div>
+                            <div className="pixel pixel-dot"></div>
+                            <div className="pixel"></div>
+                            <div className="pixel pixel-dot"></div>
+                            <div className="pixel"></div>
+                            <div className="pixel pixel-dot"></div>
+                            <div className="pixel"></div>
+                        </div>
+                        <div className="flex-row">
+                            <div className="pixel"></div>
+                            <div className="pixel"></div>
+                            <div className="pixel"></div>
+                            <div className="pixel"></div>
+                            <div className="pixel"></div>
+                            <div className="pixel"></div>
+                            <div className="pixel"></div>
+                            <div className="pixel"></div>
+                            <div className="pixel"></div>
+                            <div className="pixel"></div>
+                            <div className="pixel"></div>
+                        </div>
                     </div>
                 </div>
             </div>

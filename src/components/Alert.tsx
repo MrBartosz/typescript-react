@@ -45,6 +45,11 @@ export const Alert = () => {
           {show ? "Hide" : "Show Alerts"}
         </button>
       </div>
+      {show &&
+      <div className="alert-p">
+        <p>Zadanie generuje losowe alerty po kliknięciu w przycisk.</p>
+      </div>
+      }
       {show && (
         <div className="Alert-body">
           <button onClick={handleClick} className="Alert-button">

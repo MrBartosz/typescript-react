@@ -90,3 +90,17 @@
 .ShoppingCart-add-button:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+
+.shopping-cart-p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-image: linear-gradient(to bottom, rgb(59, 59, 58), #14110bd0);
+    color: aliceblue;
+    margin: 0 2rem;
+}
+
+.shopping-cart-p p {
+    padding: 0.5rem 0;
+}
+

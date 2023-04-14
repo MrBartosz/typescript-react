@@ -21,8 +21,12 @@ export const Mirror = () => {
         <button className='button' onClick={() => toggleShow(!show)}>
             {show ? 'Hide' : 'Show Mirror'}
         </button>
-        { show && <input type="text" className="text-input" value={text} onChange={onChange} />}
-        { show && <span className='mirror'>{reversed}</span>}
+        <div className="mirror-container">
+          { show && <p className="mirror-p">Zadanie polega na renderowaniu interaktywnego lusterka, pozwalając na wpisywanie tekstu w polu tekstowym i wyświetlanie go w lustrze w odwróconej formie.</p>}
+          { show && <input type="text" className="text-input" value={text} onChange={onChange} />}
+          { show && <span className='mirror'>{reversed}</span>}
+        </div>
+        
       </div>
     </>
   );

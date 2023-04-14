@@ -37,3 +37,14 @@
     display: inline-block;
     box-shadow: 0 7px 3px -5px rgba(0,0,0,0.2);
   }
+
+  .mirror-p {
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: aliceblue;
+    background-image: linear-gradient(to bottom, rgb(59, 59, 58), #14110bd0);
+  }
+  .mirror-container {
+    margin: 0 5rem;
+  }

@@ -35,6 +35,9 @@ export const Code = () => {
         
         {show && 
         <div className="code-wrapper">
+            <div className='code-p'>
+                <p>Zadanie polega na obsługiwaniu 6-cyfrowego kodu z klawiatury numerycznej, umożlwiając jego zapisanie, zresetowanie oraz wyświetlanie zasłoniętej wersji kodu na ekranie.</p>
+            </div>
             <h2 className='code-message'>
                 {code.length === 6 ? `Zapisz, lub zresetuj`
                 : 'Wpisz 6-cyfrowy kod'}

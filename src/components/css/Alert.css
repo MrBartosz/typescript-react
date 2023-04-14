@@ -32,3 +32,16 @@
 .Alert-button:hover {
     background-color: rgba(127, 255, 212, 0.671);
 }
+
+.alert-p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-image: linear-gradient(to bottom, rgb(59, 59, 58), #14110bd0);
+    color: aliceblue;
+    margin: 0 20rem;
+}
+
+.alert-p p {
+    padding: 0.5rem 0;
+}

@@ -22,6 +22,7 @@ export const Bulb = () => {
       </div>
         {show &&
         <div className="App bulb_app">
+            <p className="bulb-p">Zadanie polega na renderowaniu interaktywnej żarówki, umożliwiając jej włączanie i wyłączanie za pomocą przełącznika.</p>
             <div className='bulb'>
                 <div className={isActive ? 'bulb__on' : 'bulb__top'}></div>
                 <img className="bulb__wire" src="https://i.imgur.com/YHZCVPl.png" alt="Wire" />

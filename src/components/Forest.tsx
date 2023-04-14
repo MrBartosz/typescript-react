@@ -41,7 +41,11 @@ export const Forest = () => {
                 {show ? 'Hide' : 'Show Forest'}
             </button>
         </div>
-
+        {show &&
+        <div className='forest-p'>
+            <p>Zadanie polega na odkrywaniu skarbu przeciągając myszką po drzewach. Po znalezieniu skarbu użytkownik może zresetować grę.</p>
+        </div>
+        }
         {show && 
         <div className="forest-entry forest-flex-row" onMouseOver={isTaskCompleted ? undefined : mouseOver}>
             <div className="forest-flex-column">

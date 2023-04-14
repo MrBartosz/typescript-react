@@ -52,6 +52,11 @@ export const ShoppingCart = () => {
                 {show ? 'Hide' : 'Show Shopping Cart'}
             </button>
         </div>
+            {show && 
+                <div className="shopping-cart-p">
+                    <p>Zadanie polega na dodawaniu i usuwaniu przedmiotów z koszyka, obliczanie i wyświetlanie łączniej sumy zamówienia.</p>
+                </div>
+            }
             {show &&
             <div className="ShoppingCart-body">
                 <h1 className="ShoppingCart-h1">Podsumowanie Zamówienia</h1>
