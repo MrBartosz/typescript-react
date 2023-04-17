@@ -5,7 +5,6 @@ import './css/Bulb.css'
 
 export const Bulb = () => {
   const [isActive, setActive] = useState(false)
-  const [show, toggleShow] = useState(false);
   
   const onChange = () => {
     setActive(!isActive)
@@ -14,13 +13,6 @@ export const Bulb = () => {
   
   return (
     <>
-
-      <div className='App'>
-        <button className='button' onClick={() => toggleShow(!show)}>
-            {show ? 'Hide' : 'Show Bulb'}
-        </button>
-      </div>
-        {show &&
         <div className="App bulb_app">
             <p className="bulb-p">Zadanie polega na renderowaniu interaktywnej żarówki, umożliwiając jej włączanie i wyłączanie za pomocą przełącznika.</p>
             <div className='bulb'>
@@ -34,7 +26,6 @@ export const Bulb = () => {
                 {isActive ? `Światło włączone` : `Światło wyłączone`}
             </label>
         </div>
-        }
     </>
   );
 }

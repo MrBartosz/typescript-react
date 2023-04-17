@@ -3,7 +3,6 @@ import './css/Forest.css'
 
 
 export const Forest = () => {
-    const [show, toggleShow] = useState(false);
     const [isTaskCompleted, setIsTaskCompleted] = useState(false);
     
     const forest = document.querySelectorAll('.forest-tree')
@@ -36,17 +35,10 @@ export const Forest = () => {
     
     return (
     <>
-        <div className='App'>
-            <button className='button' onClick={() => toggleShow(!show)}>
-                {show ? 'Hide' : 'Show Forest'}
-            </button>
-        </div>
-        {show &&
         <div className='forest-p'>
             <p>Zadanie polega na odkrywaniu skarbu przeciągając myszką po drzewach. Po znalezieniu skarbu użytkownik może zresetować grę.</p>
         </div>
-        }
-        {show && 
+
         <div className="forest-entry forest-flex-row" onMouseOver={isTaskCompleted ? undefined : mouseOver}>
             <div className="forest-flex-column">
                 <div className="forest-tree">🌲</div>
@@ -206,7 +198,6 @@ export const Forest = () => {
                 {isTaskCompleted ? 'Gratulacje, odnalazłeś skarb!' : 'Poszukaj skarbu'}
             </h2>
         </div>
-        }
     </>
     )
 }

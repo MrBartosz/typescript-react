@@ -21,17 +21,9 @@ export const Steps = () => {
     return (
         <>
 
-            <div className='App'>
-                <button className='button' onClick={() => toggleShow(!show)}>
-                    {show ? 'Hide' : 'Show Steps'}
-                </button>
-            </div>
-            {show &&
             <div className="steps-p">
                 <p>Zadanie generuje interaktywne kroki związane z procesem zamawiania, pozwalając na przejście do kolejnych etapów po kliknięciu przycisku "Dalej" i powrót po kliknięciu "Wróć"</p>
             </div>
-            }
-            {show &&
             <div className="Steps-body">
                 <div className="Steps-container">
                     <div className="Steps-main-container">
@@ -55,8 +47,6 @@ export const Steps = () => {
                         <button className={`Steps-button-next ${currentStep === 4 ? 'Steps-last' : ''}`} onClick={handleNext}>{currentStep === 4 ? '' : 'Dalej'}</button>
                     </div>
             </div>
-
-            }
       </>
     )
 }

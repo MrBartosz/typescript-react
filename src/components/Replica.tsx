@@ -5,7 +5,6 @@ import './css/Replica.css'
 export const Replica = () => {
 
     const [isSorted, setSort] = useState(false);
-    const [show, toggleShow] = useState(false);
     const [sendRequest, setSendRequest] = useState(false);
     
     const fakeCanvas = document.querySelectorAll('.fake-canvas .pixel')
@@ -42,13 +41,6 @@ export const Replica = () => {
 
      return (
     <>
-
-    <div className='App'>
-        <button className='button' onClick={() => toggleShow(!show)}>
-            {show ? 'Hide' : 'Show Replica'}
-        </button>
-    </div>
-        {show &&
         <div>
             <div className="replica-p">
                 <p>Zadanie polega na renderowaniu dwóch plansz - oryginalej i repliki, składających się z pikseli. Po kliknięciu przycisku zmienia ich wygląd na identyczny lub różny w zależności od ustawień sortowania.</p>
@@ -244,12 +236,9 @@ export const Replica = () => {
                     </div>
                 </div>
             </div>
-            }
-            {show && 
                 <div className="replica_button_div">
                     <button className="replica_button" onClick={() => setSendRequest(true)}>{isSorted ? 'Unsort' : 'Sort'}</button>
                 </div>
-            }
     </>
   );
 }

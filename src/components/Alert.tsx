@@ -2,7 +2,6 @@ import { useState } from "react";
 import "./css/Alert.css";
 
 export const Alert = () => {
-  const [show, toggleShow] = useState(false);
   const [divList, setDivList] = useState<{ id: number; color: string; content: string }[]>([]);
 
   let color: string;
@@ -40,17 +39,9 @@ export const Alert = () => {
 
   return (
     <>
-      <div className="App">
-        <button className="button" onClick={() => toggleShow(!show)}>
-          {show ? "Hide" : "Show Alerts"}
-        </button>
-      </div>
-      {show &&
       <div className="alert-p">
         <p>Zadanie generuje losowe alerty po kliknięciu w przycisk.</p>
       </div>
-      }
-      {show && (
         <div className="Alert-body">
           <button onClick={handleClick} className="Alert-button">
             Dodaj Losowy Alert
@@ -67,7 +58,7 @@ export const Alert = () => {
           ))}
           <p>Naciśnij na alert, aby go usunąć, lub odczekaj 5 sekund by usunął się automatycznie. </p>
         </div>
-      )}
+      )
     </>
   );
 };

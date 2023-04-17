@@ -4,7 +4,6 @@ import {useState, UIEvent } from 'react';
 import './css/Lift.css'
 
 export const Lift = () => {
-    const [show, toggleShow] = useState(false);
     const [scroll, setScroll] = useState(0);
     const [direction, setDirection] = useState('🔽');
     const [floor, setFloor] = useState('Piętro: 10')
@@ -47,17 +46,11 @@ export const Lift = () => {
 
     return (
         <>
-        <div className='App'>
-            <button className='button' onClick={() => toggleShow(!show)}>
-                {show ? 'Hide' : 'Show Lift'}
-            </button>
-        </div>
-        {show &&
         <div className='lift-p'>
             <p>Zadanie polega na symulowaniu działania windy, umożliwiając jej poruszanie się w górę i w dół, oraz wyświetlanie 
                 aktualnego piętra, a także kierunku poruszania się na podstawie aktualnego scrolla.</p>
-        </div> }
-        {show &&
+        </div> 
+
         <div className = 'lift-body'>
             <div className="lift-direction">
             {floor} {direction}
@@ -98,7 +91,6 @@ export const Lift = () => {
                 </div>
             </div>
         </div>
-}
         </>
     )
 }
