@@ -11,19 +11,19 @@ export const Habit = () => {
   const [daysDone, setDaysDone] = useState(0);
   const [completedDays, setCompletedDays] = useState<string[]>([]);
   const [completedHabits, setCompletedHabits] = useState<string[]>([]);
+  const [refresh, setRefresh] = useState(false);
 
   useEffect(() => {
     if (habitOn) {
       localStorage.setItem(`completed-${habit}`, "true");
     }
+    else {
+      const keys = Object.keys(localStorage);
+      const habits = keys.filter((key) => key.startsWith("completed-")).map((key) => key.replace("completed-", ""));
+      setCompletedHabits(habits);
+    }
   }, [habitOn]);
 
-  // useEffect, który odczytuje nawyki z localStorage
-  useEffect(() => {
-    const keys = Object.keys(localStorage);
-    const habits = keys.filter((key) => key.startsWith("completed-")).map((key) => key.replace("completed-", ""));
-    setCompletedHabits(habits);
-  }, []);
 
   const checkboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const selectedDate = event.target.id;
@@ -89,8 +89,8 @@ export const Habit = () => {
     });
   };
 
-  const refreshPage = () => {
-    window.location.reload();
+  const goBack = () => {
+    setHabitOn(false);
   }
 
   useEffect(() => {
@@ -224,7 +224,7 @@ export const Habit = () => {
               <button onClick={deleteButton}>Usuń Nawyk</button>
             </div>
             <div className="HabitOn-delete-button" style={{ marginTop:20 }}>
-              <button onClick={refreshPage}>Powrót</button>
+              <button onClick={goBack}>Powrót</button>
             </div>
           </div>
         </div>
