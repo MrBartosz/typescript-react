@@ -54,18 +54,15 @@ export const Habit = () => {
   };
 
   const deleteButton = () => {
-    localStorage.removeItem(habit);
-  
-    
-    const keys = Object.keys(localStorage);
-    keys.forEach((key) => {
-      if (key.includes(habit)) {
-        localStorage.removeItem(key);
-      }
-    });
+  const keys = Object.keys(localStorage);
+  keys.forEach((key) => {
+    if (key.startsWith(`${habit}-`) || key === `completed-${habit}`) {
+      localStorage.removeItem(key);
+    }
+  });
 
-    window.location.reload();
-  };
+  window.location.reload();
+};
 
   const getStarted = () => {
     if (habit.length > 0) {
@@ -226,7 +223,7 @@ export const Habit = () => {
             <div className="HabitOn-delete-button">
               <button onClick={deleteButton}>Usuń Nawyk</button>
             </div>
-            <div className="HabitOn-delete-button" style={{marginTop:20}}>
+            <div className="HabitOn-delete-button" style={{ marginTop:20 }}>
               <button onClick={refreshPage}>Powrót</button>
             </div>
           </div>
