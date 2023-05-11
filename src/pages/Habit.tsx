@@ -11,7 +11,6 @@ export const Habit = () => {
   const [daysDone, setDaysDone] = useState(0);
   const [completedDays, setCompletedDays] = useState<string[]>([]);
   const [completedHabits, setCompletedHabits] = useState<string[]>([]);
-  const [refresh, setRefresh] = useState(false);
 
   useEffect(() => {
     if (habitOn) {
@@ -60,8 +59,7 @@ export const Habit = () => {
       localStorage.removeItem(key);
     }
   });
-
-  window.location.reload();
+  setHabitOn(false);
 };
 
   const getStarted = () => {
