@@ -59,6 +59,7 @@ export const Habit = () => {
       localStorage.removeItem(key);
     }
   });
+  setHabit('');
   setHabitOn(false);
 };
 
@@ -88,6 +89,7 @@ export const Habit = () => {
   };
 
   const goBack = () => {
+    setHabit('');
     setHabitOn(false);
   }
 
@@ -99,6 +101,11 @@ export const Habit = () => {
     }
   }, [habit]);
 
+  const handleHabitClick = (completedHabit: string) => {
+    setHabit(completedHabit);
+    setHabitOn(true);
+  };
+  
   const daysInMonth = moment(date).daysInMonth();
   const days = Array.from({ length: daysInMonth }, (_, i) => moment(date).date(i + 1));
 
@@ -142,23 +149,20 @@ export const Habit = () => {
           )}
 
 
-        {!habitAlert && (
-            <div className="Habit-input-alert-container">
-                <div className="Habit-input-alert">
-                    <h2>Zapisane Nawyki:</h2>
-                    {completedHabits.map((completedHabit) => (
-                    <p key={completedHabit}>{completedHabit}
-                    <button key={completedHabit} onClick={() => deleteHabit(completedHabit)}>Usuń</button>
-                    </p>
-                    
-                    ))}
-                </div>
-            </div>
-        )}
-
-
-
-        </div>
+          {!habitAlert && (
+                      <div className="Habit-input-alert-container">
+                          <div className="Habit-input-alert">
+                              <h2>Zapisane Nawyki:</h2>
+                              {completedHabits.map((completedHabit) => (
+                              <p key={completedHabit}>{completedHabit}
+                              <button onClick={() => handleHabitClick(completedHabit)}>Wybierz</button>
+                              <button key={completedHabit} onClick={() => deleteHabit(completedHabit)}>Usuń</button>
+                              </p>
+                              ))}
+                          </div>
+                      </div>
+                  )}
+          </div>
       )}
 
       {habitOn && (

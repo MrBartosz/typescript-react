@@ -1,8 +1,8 @@
 .Habit-body {
-    height: 100vh;
-    color: white;
-    background-color: black;
-    background-image: url(https://i.ibb.co/1Lbr59W/ios-13-stock-ipados-red-black-background-amoled-hd-1920x1080-799-2.jpg);
+  height: 100vh;
+  color: white;
+  background-color: black;
+  background-image: url(https://i.ibb.co/1Lbr59W/ios-13-stock-ipados-red-black-background-amoled-hd-1920x1080-799-2.jpg);
 }
 
 
@@ -70,17 +70,21 @@
   .Habit-input-alert {
     margin-top: 25px;
     box-shadow: 0 0 15px #8a8a8a; 
-    padding: 5px 20px;
+    padding: 0px 75px;
     font-size: 20px;
     border-radius: 25px;
+    padding-bottom: 15px;
   }
 
   .Habit-input-alert p {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0 1px 0;
   }
 
   .Habit-input-alert p button {
-    margin-left: 10px;
+    margin: 5px 0px 2px 15px;
     padding: 2px 10px;
     background-color: rgb(68, 67, 67);
     color: rgb(245, 245, 245);
@@ -89,9 +93,11 @@
     border-radius: 5px;
     font-size: 16px;
   }
+
   .Habit-input-alert p button:hover {
     background-color: rgba(190, 188, 188, 0.342); 
   }
+  
   
   .Habit-input-alert p button:active {
     background-color: rgba(245, 245, 245, 0.493);
@@ -99,14 +105,12 @@
     box-shadow: 0 0 25px #424141; ;
   }
 
+
   .HabitOn-body {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
-
-
   
   .HabitOn-title {
     margin-top: 50px;
@@ -117,7 +121,6 @@
     font-family: 'Courier New', Courier, monospace;
     border-radius: 10px;
   }
-
 
   .HabitOn-delete-button {
     margin-top: 40px;
