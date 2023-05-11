@@ -2,7 +2,6 @@ import { useState } from "react";
 import './css/Steps.css'
 
 export const Steps = () => {
-    const [show, toggleShow] = useState(false);
     const [currentStep, setCurrentStep] = useState(1);
 
     const handleNext = () => {
